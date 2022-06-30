@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./Layout";
 
-const Home = () => {
+const Prescribtion = () => {
   return (
     <>
       <Layout />
@@ -9,4 +9,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Prescribtion;

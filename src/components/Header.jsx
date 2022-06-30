@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Dropdown from "./Dropdown";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const Header = () => {
@@ -6,9 +8,11 @@ const Header = () => {
     <header className="max-w-[1080px] mx-auto flex items-center justify-between pt-8">
       {/* logo */}
       <div>
-        <h2 className="text-3xl text-primary font-semibold tracking-wide leading-8">
-          MedCare
-        </h2>
+        <Link to="/">
+          <h2 className="text-3xl text-primary font-semibold tracking-wide leading-8">
+            MedCare
+          </h2>
+        </Link>
       </div>
       {/* right part */}
       <div className="hidden md:flex gap-x-8 ">
@@ -52,6 +56,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Dropdown />
     </header>
   );
 };
