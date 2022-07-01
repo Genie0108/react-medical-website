@@ -11,6 +11,9 @@ module.exports = {
         secondary: "var(--c-bg-secondary)",
         secondaryLight: "var(--c-secondarylight)",
       },
+      backgroundImage: {
+        hospitalImg: "url(./assets/images/hospital.jpg)",
+      },
     },
   },
   plugins: [],

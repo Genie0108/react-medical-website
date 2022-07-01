@@ -6,12 +6,14 @@ import { IoIosContact } from "react-icons/io";
 const Navbar = () => {
   let activeStyle = {
     color: "rgb(10,124,139)",
-    textDecoration: "underline",
+    // textDecoration: "underline",
+    borderColor: "rgb(10,124,139)",
+    paddingBottom: "10px",
   };
   return (
-    <nav className="hidden max-w-[1080px] mx-auto md:flex items-center justify-between mt-14">
+    <nav className="hidden max-w-[1080px] mx-auto px-1 md:flex items-center justify-between mt-14">
       <ul className="flex items-center gap-x-3 lg:gap-x-5">
-        <li className="text-base font-medium text-gray-600">
+        <li className="text-base font-medium text-gray-600 hover:border-b-4 hover:border-primary">
           <NavLink
             to="/findadoctor"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -19,7 +21,7 @@ const Navbar = () => {
             Find a Doctor
           </NavLink>
         </li>
-        <li className="text-base font-medium text-gray-600">
+        <li className="text-base font-medium text-gray-600 hover:border-b-4 hover:border-primary">
           <NavLink
             to="/aboutus"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -27,7 +29,7 @@ const Navbar = () => {
             About Us
           </NavLink>
         </li>
-        <li className="text-base font-medium text-gray-600">
+        <li className="text-base font-medium text-gray-600 hover:border-b-4 hover:border-primary">
           <NavLink
             to="/ourservices"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -35,7 +37,7 @@ const Navbar = () => {
             Our Services
           </NavLink>
         </li>
-        <li className="text-base font-medium text-gray-600">
+        <li className="text-base font-medium text-gray-600 hover:border-b-4 hover:border-primary">
           <NavLink
             to="/ourdoctors"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -43,7 +45,7 @@ const Navbar = () => {
             Our Doctors
           </NavLink>
         </li>
-        <li className="text-base font-medium text-gray-600">
+        <li className="text-base font-medium text-gray-600 hover:border-b-4 hover:border-primary">
           <NavLink
             to="/onlineprescribtions"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -51,7 +53,7 @@ const Navbar = () => {
             Online Prescribtions
           </NavLink>
         </li>
-        <li className="text-base font-medium text-gray-600">
+        <li className="text-base font-medium text-gray-600 hover:border-b-4 hover:border-primary">
           <NavLink
             to="/urgentcare"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}

@@ -5,7 +5,7 @@ import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const Header = () => {
   return (
-    <header className="max-w-[1080px] mx-auto flex items-center justify-between pt-8">
+    <header className="max-w-[1080px] mx-auto px-1 flex items-center justify-between pt-8">
       {/* logo */}
       <div>
         <Link to="/">
