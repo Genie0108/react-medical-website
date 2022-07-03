@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
 
@@ -11,7 +11,7 @@ const Navbar = () => {
     paddingBottom: "10px",
   };
   return (
-    <nav className="hidden max-w-[1080px] mx-auto px-1 md:flex items-center justify-between mt-14">
+    <nav className="hidden max-w-[1200px] mx-auto px-2 md:flex items-center justify-between mt-14">
       <ul className="flex items-center gap-x-3 lg:gap-x-5">
         <li className="text-base font-medium text-gray-600 hover:border-b-4 hover:border-primary">
           <NavLink

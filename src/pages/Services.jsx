@@ -1,10 +1,13 @@
 import React from "react";
-import Layout from "./Layout";
+import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
   return (
     <>
-      <Layout />
+      <section className="max-w-[1200px] mx-auto px-2 mt-10" id="ourservices">
+        <h1 className="text-3xl font-bold text-primary">Our Services</h1>
+        <ServiceCard />
+      </section>
     </>
   );
 };

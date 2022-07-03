@@ -3,7 +3,7 @@ import { FaHeartbeat } from "react-icons/fa";
 import { AiOutlineClockCircle } from "react-icons/ai";
 const EmergencyService = () => {
   return (
-    <div className="max-w-[1080px] mx-auto px-2 py-10 flex items-start gap-x-5 flex-col gap-y-5 sm:gap-y-8 bg-gradient-to-r from-primaryDark to-primary md:flex-row lg:px-10 lg:relative -top-14 left-0 right-0">
+    <div className="max-w-[1200px] mx-auto px-2 py-10 flex items-start gap-x-5 flex-col gap-y-5 sm:gap-y-8 bg-gradient-to-r from-primaryDark to-primary md:flex-row lg:px-10 lg:relative -top-14 left-0 right-0">
       <div className="">
         <div className="flex items-center gap-x-3">
           <i>

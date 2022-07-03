@@ -4,7 +4,7 @@ const IntroSection = () => {
   return (
     <section className="w-full mt-10 flex bg-hospitalImg bg-cover bg-no-repeat bg-center saturate-150">
       {/* content */}
-      <div className="max-w-[1080px] mx-auto w-full h-[400px] pt-8 flex flex-col items-start justify-center md:h-[500px]">
+      <div className="max-w-[1200px] mx-auto w-full h-[400px] pt-8 flex flex-col items-start justify-center md:h-[500px]">
         <h1 className="text-white text-6xl font-semibold font-poppins leading-none sm:text-9xl">
           Medcare
         </h1>
