@@ -9,22 +9,24 @@ import Prescribtion from "./pages/Prescribtion";
 import Services from "./pages/Services";
 import UrgentCare from "./pages/UrgentCare";
 import NoPage from "./pages/NoPage";
-import ScrollToTop from "./components/ScrollToTop";
+import Layout from "./pages/Layout";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <ScrollToTop />
         <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/aboutus" exact element={<About />} />
-          <Route path="/ourservices" element={<Services />} />
-          <Route path="/findadoctor" element={<FindDoctor />} />
-          <Route path="/ourdoctors" element={<OurDoctor />} />
-          <Route path="/onlineprescribtions" element={<Prescribtion />} />
-          <Route path="/urgentcare" element={<UrgentCare />} />
-          <Route path="*" element={<NoPage />} />
+          {/* creating a shared layout */}
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/aboutus" element={<About />} />
+            <Route path="/ourservices" element={<Services />} />
+            <Route path="/findadoctor" element={<FindDoctor />} />
+            <Route path="/ourdoctors" element={<OurDoctor />} />
+            <Route path="/onlineprescribtions" element={<Prescribtion />} />
+            <Route path="/urgentcare" element={<UrgentCare />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
         </Routes>
       </div>
     </BrowserRouter>

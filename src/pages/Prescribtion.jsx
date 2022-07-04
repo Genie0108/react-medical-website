@@ -2,11 +2,7 @@ import React from "react";
 import Layout from "./Layout";
 
 const Prescribtion = () => {
-  return (
-    <>
-      <Layout />
-    </>
-  );
+  return <></>;
 };
 
 export default Prescribtion;

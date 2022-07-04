@@ -1,12 +1,7 @@
 import React from "react";
-import Layout from "./Layout";
 
 const FindDoctor = () => {
-  return (
-    <div>
-      <Layout />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default FindDoctor;

@@ -1,12 +1,7 @@
 import React from "react";
-import Layout from "./Layout";
 
 const UrgentCare = () => {
-  return (
-    <>
-      <Layout />
-    </>
-  );
+  return <></>;
 };
 
 export default UrgentCare;

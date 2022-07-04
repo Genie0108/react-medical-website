@@ -35,6 +35,7 @@ const Dropdown = () => {
                 <NavLink
                   to="/findadoctor"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  onClick={() => setToggle(false)}
                 >
                   Find a Doctor
                 </NavLink>
@@ -43,6 +44,7 @@ const Dropdown = () => {
                 <NavLink
                   to="/aboutus"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  onClick={() => setToggle(false)}
                 >
                   About Us
                 </NavLink>
@@ -51,6 +53,7 @@ const Dropdown = () => {
                 <NavLink
                   to="/ourservices"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  onClick={() => setToggle(false)}
                 >
                   Our Services
                 </NavLink>
@@ -59,6 +62,7 @@ const Dropdown = () => {
                 <NavLink
                   to="/ourdoctors"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  onClick={() => setToggle(false)}
                 >
                   Our Doctors
                 </NavLink>
@@ -67,6 +71,7 @@ const Dropdown = () => {
                 <NavLink
                   to="/onlineprescribtions"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  onClick={() => setToggle(false)}
                 >
                   Online Prescribtions
                 </NavLink>
@@ -75,6 +80,7 @@ const Dropdown = () => {
                 <NavLink
                   to="/urgentcare"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                  onClick={() => setToggle(false)}
                 >
                   Urgent Care
                 </NavLink>
