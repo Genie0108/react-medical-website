@@ -3,6 +3,7 @@ import IntroSection from "../components/IntroSection";
 import OpeningHours from "../components/OpeningHours";
 import Services from "../pages/Services";
 import HospitalInfo from "../components/HospitalInfo";
+import OurExpertises from "../components/OurExpertise";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <OpeningHours />
       <Services />
       <HospitalInfo />
+      <OurExpertises />
     </>
   );
 };
