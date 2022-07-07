@@ -4,7 +4,7 @@ import OpeningHours from "../components/OpeningHours";
 import Services from "../pages/Services";
 import HospitalInfo from "../components/HospitalInfo";
 import OurExpertises from "../components/OurExpertise";
-
+import TabGallery from "../components/TabGallery";
 const Home = () => {
   return (
     <>
@@ -13,6 +13,7 @@ const Home = () => {
       <Services />
       <HospitalInfo />
       <OurExpertises />
+      <TabGallery />
     </>
   );
 };
