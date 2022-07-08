@@ -17,7 +17,9 @@ const TabGallery = () => {
 
       coverImg:
         "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-2-2.jpg",
-      videoLink: "",
+      // videoLink: "https://youtu.be/LSRNmhLS76o",
+      // videoImg:
+      // "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-1-1.jpg",
     },
     {
       id: 2,
