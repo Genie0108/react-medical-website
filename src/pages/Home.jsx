@@ -5,6 +5,9 @@ import Services from "../pages/Services";
 import HospitalInfo from "../components/HospitalInfo";
 import OurExpertises from "../components/OurExpertise";
 import TabGallery from "../components/TabGallery";
+import OurDoctor from "./doctors/OurDoctor";
+import Certificates from "../components/Certificates";
+
 const Home = () => {
   return (
     <>
@@ -14,6 +17,8 @@ const Home = () => {
       <HospitalInfo />
       <OurExpertises />
       <TabGallery />
+      <OurDoctor />
+      <Certificates />
     </>
   );
 };

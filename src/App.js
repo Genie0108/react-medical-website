@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import FindDoctor from "./pages/FindDoctor";
-import OurDoctor from "./pages/OurDoctor";
+import OurDoctor from "./pages/doctors/OurDoctor";
 import Prescribtion from "./pages/Prescribtion";
 import Services from "./pages/Services";
 import UrgentCare from "./pages/UrgentCare";

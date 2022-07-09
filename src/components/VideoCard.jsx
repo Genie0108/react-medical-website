@@ -34,7 +34,7 @@ const VideoCard = ({
             ingredient from traditional remedies or by serendipitous discovery.
             Later chemical libraries of synthetic small molecules.
           </p>
-          <p className="text-white text-[18px] my-5">
+          <p className="text-white text-[16px] tracking-wide my-5">
             Modern drug discovery involves the identification of screening hits,
             medicinal chemistry and optimization of those hits to increase the
             affinity, selectivity (to reduce the potential of side effects),

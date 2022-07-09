@@ -16,7 +16,7 @@ const TabGallery = () => {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur alias mollitia exercitationem praesentium consequuntur numquam deleniti, illum veniam molestiae eaque.",
 
       coverImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-2-2.jpg",
+        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-1-2.jpg",
       // videoLink: "https://youtu.be/LSRNmhLS76o",
       // videoImg:
       // "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-1-1.jpg",
@@ -32,8 +32,10 @@ const TabGallery = () => {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur alias mollitia exercitationem praesentium consequuntur numquam deleniti, illum veniam molestiae eaque.",
 
       coverImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-2-2.jpg",
+        "https://media.istockphoto.com/photos/empty-modern-hospital-corridor-picture-id1294129593?k=20&m=1294129593&s=612x612&w=0&h=NvqV92MC0Uv8LHHfU-4xGWV7Dq--e6xdAtQkc5hXwug=",
       videoLink: "",
+      videoImg:
+        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-2-1.jpg",
     },
     {
       id: 3,
@@ -48,6 +50,8 @@ const TabGallery = () => {
       coverImg:
         "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-2-2.jpg",
       videoLink: "",
+      videoImg:
+        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-3-1.jpg",
     },
 
     {
@@ -61,7 +65,7 @@ const TabGallery = () => {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur alias mollitia exercitationem praesentium consequuntur numquam deleniti, illum veniam molestiae eaque.",
 
       coverImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-2-2.jpg",
+        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-4-2.jpg",
       videoLink: "",
     },
   ];
@@ -79,7 +83,11 @@ const TabGallery = () => {
           />
         ))}
       </div>
-      <VideoCard heading={tabs[activeTab - 1].heading} />
+      <VideoCard
+        heading={tabs[activeTab - 1].heading}
+        coverImg={tabs[activeTab - 1].coverImg}
+        videoImg={tabs[activeTab - 1].videoImg}
+      />
     </div>
   );
 };
