@@ -7,6 +7,7 @@ import OurExpertises from "../components/OurExpertise";
 import TabGallery from "../components/TabGallery";
 import OurDoctor from "./doctors/OurDoctor";
 import Certificates from "../components/Certificates";
+import NewsLetterSubscribtion from "../components/NewsLetterSubscribtion";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <TabGallery />
       <OurDoctor />
       <Certificates />
+      <NewsLetterSubscribtion />
     </>
   );
 };
