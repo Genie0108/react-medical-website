@@ -8,6 +8,7 @@ import TabGallery from "../components/TabGallery";
 import OurDoctor from "./doctors/OurDoctor";
 import Certificates from "../components/Certificates";
 import NewsLetterSubscribtion from "../components/NewsLetterSubscribtion";
+import RecentNews from "../components/RecentNews";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <OurDoctor />
       <Certificates />
       <NewsLetterSubscribtion />
+      <RecentNews />
     </>
   );
 };
