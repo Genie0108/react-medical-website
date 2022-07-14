@@ -10,6 +10,7 @@ import Certificates from "../components/Certificates";
 import NewsLetterSubscribtion from "../components/NewsLetterSubscribtion";
 import RecentNews from "../components/RecentNews";
 import WeOffer from "../components/WeOffer";
+import Testimonial from "../components/Testimonial";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <NewsLetterSubscribtion />
       <RecentNews />
       <WeOffer />
+      <Testimonial />
     </>
   );
 };

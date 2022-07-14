@@ -4,6 +4,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+/* adding Merriweather font in testimonial section */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -19,4 +22,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.testimonial {
+  font-family: "Merriweather", serif;
 }
