@@ -11,6 +11,7 @@ import NewsLetterSubscribtion from "../components/NewsLetterSubscribtion";
 import RecentNews from "../components/RecentNews";
 import WeOffer from "../components/WeOffer";
 import Testimonial from "../components/Testimonial";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <RecentNews />
       <WeOffer />
       <Testimonial />
+      <Contact />
     </>
   );
 };
