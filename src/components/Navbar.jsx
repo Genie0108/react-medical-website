@@ -69,9 +69,11 @@ const Navbar = () => {
         <i>
           <IoIosContact size="30px" fill="grey" className="cursor-pointer" />
         </i>
-        <button className="uppercase flex items-center px-5 py-2 rounded-3xl text-white font-semibold cursor-pointer bg-primary">
-          Contact
-        </button>
+        <a href="#contact">
+          <button className="uppercase flex items-center px-5 py-2 rounded-3xl text-white font-semibold cursor-pointer bg-primary">
+            Contact
+          </button>
+        </a>
       </div>
     </nav>
   );

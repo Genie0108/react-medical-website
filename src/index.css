@@ -20,6 +20,10 @@
   --c-secondarylight: #f5f5f5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }

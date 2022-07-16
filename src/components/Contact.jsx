@@ -9,7 +9,10 @@ const Contact = () => {
 
   // latitude and longitude of Dhulikhel Hospital
   return (
-    <section className="w-full bg-gradient-to-r from-primary to-primaryDark relative -top-10">
+    <section
+      id="contact"
+      className="w-full bg-gradient-to-r from-primary to-primaryDark relative -top-10"
+    >
       <div className="md:flex xl:gap-x-10 max-w-[1200px] mx-auto">
         {/* form section */}
         <div className="w-full md:w-[45%] px-2 py-10 lg:py-16 xl:px-0">

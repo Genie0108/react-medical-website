@@ -14,9 +14,11 @@ const IntroSection = () => {
         <p className="pl-[5px] mt-2 text-white text-base leading-6 font-normal font-poppins tracking-wider sm:text-[22px]">
           Living Healthy Together
         </p>
-        <button className="ml-1 mt-10 uppercase flex items-center px-5 py-2 rounded-3xl text-white font-semibold cursor-pointer bg-primary">
-          Contact
-        </button>
+        <a href="#contact">
+          <button className="ml-1 mt-10 uppercase flex items-center px-5 py-2 rounded-3xl text-white font-semibold cursor-pointer bg-primary">
+            Contact
+          </button>
+        </a>
       </div>
     </section>
   );
