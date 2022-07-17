@@ -13,6 +13,7 @@ import WeOffer from "../components/WeOffer";
 import Testimonial from "../components/Testimonial";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
       <Testimonial />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </>
   );
 };
