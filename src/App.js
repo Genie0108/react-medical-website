@@ -1,15 +1,15 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import About from "./pages/About";
 import FindDoctor from "./pages/FindDoctor";
 import OurDoctor from "./pages/doctors/OurDoctor";
 import Prescribtion from "./pages/Prescribtion";
-import Services from "./pages/Services";
+import Services from "./pages/services/Services";
 import UrgentCare from "./pages/UrgentCare";
 import NoPage from "./pages/NoPage";
-import Layout from "./pages/Layout";
+import Layout from "./layouts/Layout";
 
 function App() {
   return (

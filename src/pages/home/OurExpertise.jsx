@@ -1,6 +1,6 @@
 import React from "react";
 import ExpertiseCard from "./ExpertiseCard";
-import Form from "./Form";
+import Form from "../../components/Form";
 
 const OurExpertise = () => {
   return (

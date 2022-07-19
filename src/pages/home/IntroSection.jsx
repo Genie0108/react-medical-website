@@ -8,7 +8,7 @@ const IntroSection = () => {
         <h1 className="text-white text-6xl font-semibold font-poppins leading-none sm:text-9xl">
           Medcare
         </h1>
-        <h2 className="pl-[5px] text-secondary text-xl font-normal font-poppins sm:text-3xl">
+        <h2 className="pl-[5px] text-secondary text-xl text-gray-100 font-normal font-poppins sm:text-3xl">
           Medical Center in Kathmandu
         </h2>
         <p className="pl-[5px] mt-2 text-white text-base leading-6 font-normal font-poppins tracking-wider sm:text-[22px]">

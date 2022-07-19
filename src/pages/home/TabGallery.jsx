@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import VideoInfoBox from "./VideoInfoBox";
-import VideoCard from "./VideoCard";
+import VideoCard from "../../components/cards/VideoCard";
 
 const TabGallery = () => {
   const [activeTab, setActiveTab] = useState(1);

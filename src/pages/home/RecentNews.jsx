@@ -1,8 +1,8 @@
 import React from "react";
-import NewsCard from "./NewsCard";
-import QuickLinkCard from "./QuickLinkCard";
-import news from "../data/News";
-import links from "../data/QuickLink";
+import NewsCard from "../../components/cards/NewsCard";
+import QuickLinkCard from "../../components/cards/QuickLinkCard";
+import news from "../../data/News";
+import links from "../../data/QuickLink";
 
 const RecentNews = () => {
   return (

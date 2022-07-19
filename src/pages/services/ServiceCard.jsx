@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import ServiceList from "../data/Services";
+import ServiceList from "../../data/Services";
 
 const ServiceCard = () => {
   return (

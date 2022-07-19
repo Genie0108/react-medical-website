@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsPlayFill } from "react-icons/bs";
-import VideoPlayer from "./VideoPlayer";
+import VideoPlayer from "../../pages/home/VideoPlayer";
 
 const VideoCard = ({
   heading,

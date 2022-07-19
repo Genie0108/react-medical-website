@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "../../components/cards/TestimonialCard";
 
 const Testimonial = () => {
   const testimonials = [

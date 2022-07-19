@@ -1,6 +1,6 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import Button from "./Button";
+import Button from "./ui/Button";
 
 const Contact = () => {
   const handleSubmit = (e) => {

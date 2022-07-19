@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ExpertiseList from "../data/Expertises";
+import ExpertiseList from "../../data/Expertises";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const ExpertiseCard = () => {

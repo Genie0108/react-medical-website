@@ -1,5 +1,5 @@
 import React from "react";
-import WeOfferCard from "./WeOfferCard";
+import WeOfferCard from "./cards/WeOfferCard";
 
 const Weoffer = () => {
   const offers = [

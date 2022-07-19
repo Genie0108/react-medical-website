@@ -5,7 +5,7 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./ourdoctor.css";
-import DoctorCard from "../../components/DoctorCard";
+import DoctorCard from "./DoctorCard";
 import doctors from "../../data/OurDoctor";
 import { IoIosArrowRoundForward } from "react-icons/io";
 

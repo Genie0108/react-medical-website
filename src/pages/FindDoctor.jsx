@@ -1,7 +1,7 @@
 import React from "react";
 import { GoLocation } from "react-icons/go";
 import { GrSearch } from "react-icons/gr";
-import Footer from "../components/Footer";
+import Footer from "../layouts/Footer";
 
 const FindDoctor = () => {
   const handleSubmit = (e) => {
@@ -10,7 +10,7 @@ const FindDoctor = () => {
   return (
     <section className="mt-10">
       <div className="px-2 sm:px-5 pt-10 pb-24 bg-primary">
-        <h1 className="text-3xl text-gray-100 md:text-center font-semibold text-primary">
+        <h1 className="text-2xl sm:text-3xl text-gray-100 md:text-center font-semibold text-primary">
           Get 10% discount on all appointments* booked and paid online.
         </h1>
       </div>
@@ -28,7 +28,7 @@ const FindDoctor = () => {
               name="doctor"
               id="doctor"
               placeholder="Search for Doctor or Speciality"
-              className="py-4 w-full focus:outline-0"
+              className="py-4 w-full focus:outline-0 overflow-ellipsis"
               required
             />
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Dropdown from "./Dropdown";
+import Dropdown from "../components/ui/Dropdown";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const Header = () => {
