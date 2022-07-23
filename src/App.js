@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
-import About from "./pages/About";
+import About from "./pages/about us/About";
 import FindDoctor from "./pages/FindDoctor";
 import OurDoctor from "./pages/doctors/OurDoctor";
 import Prescribtion from "./pages/Prescribtion";
