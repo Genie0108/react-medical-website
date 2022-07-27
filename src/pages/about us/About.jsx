@@ -6,6 +6,8 @@ import Heading from "../../components/ui/Heading";
 import AboutMedCare from "./AboutMedCare";
 import ChairmanMessage from "./ChairmanMessage";
 import LeadersCard from "../../components/cards/LeadersCard";
+import Footer from "../../layouts/Footer";
+import ScrollToTop from "../../components/ui/ScrollToTop";
 
 const AboutUs = () => {
   return (
@@ -54,6 +56,8 @@ const AboutUs = () => {
           </div>
         </section>
       </div>
+      <Footer />
+      <ScrollToTop />
     </>
   );
 };

@@ -9,7 +9,7 @@ const VideoInfoBox = (props) => {
       onClick={handleSelect}
       className={`${
         props.isActive &&
-        "bg-gradient-to-r from-primary to-[rgba(59,135,116,0.9)] text-white sm:flex items-start gap-x-3 border-none"
+        "bg-gradient-to-r from-primary to-[rgb(39,96,82)] text-white sm:flex items-start gap-x-3 border-none"
       } pl-4 py-4 cursor-pointer sm:w-1/4 sm:py-6 sm:pl-4 sm:pr-4 sm:text-start sm:border-r-2 sm:border-r-gray-400 md:py-4 lg:pl-10 xl:py-8 `}
     >
       {props.isActive === true ? (
