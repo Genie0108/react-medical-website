@@ -1,7 +1,7 @@
 import React from "react";
 import IntroSection from "./IntroSection";
 import EmergencyService from "./EmergencyService";
-import Services from "../services/Services";
+import ServiceCard from "../services/ServiceCard";
 import HospitalInfo from "../../components/HospitalInfo";
 import OurExpertises from "./OurExpertise";
 import TabGallery from "./TabGallery";
@@ -20,7 +20,7 @@ const Home = () => {
     <>
       <IntroSection />
       <EmergencyService />
-      <Services />
+      <ServiceCard />
       <HospitalInfo />
       <OurExpertises />
       <TabGallery />
