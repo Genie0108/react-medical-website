@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import ServiceCard from "./ServiceCard";
 import { BsSearch } from "react-icons/bs";
 import ScrollToTop from "../../components/ui/ScrollToTop";
+import Footer from "../../layouts/Footer";
 import ArrayFilter from "../../components/ArrayFilter";
 import diseases_a from "../../data/Diseases_A";
 import diseases_b from "../../data/Diseases_B";
 import diseases_c from "../../data/Diseases_C";
+import diseases_d from "../../data/Diseases_D";
+import diseases_e from "../../data/Diseases_E";
 
 const Services = () => {
   const [enterDiseaseName, setEnterDiseaseName] = useState("");
+  const [message, setMessage] = useState(false);
 
   const alphabets = [
     {
@@ -26,14 +30,16 @@ const Services = () => {
       letter: "c",
       diseases: diseases_c,
     },
-    // {
-    //   id: 4,
-    //   letter: "d",
-    // },
-    // {
-    //   id: 5,
-    //   letter: "e",
-    // },
+    {
+      id: 4,
+      letter: "d",
+      diseases: diseases_d,
+    },
+    {
+      id: 5,
+      letter: "e",
+      diseases: diseases_e,
+    },
     // {
     //   id: 6,
     //   letter: "f",
@@ -171,6 +177,7 @@ const Services = () => {
 
       {/* filter disease from list */}
       <section className="max-w-[1200px] mx-auto px-2 mt-10">
+        {/* input box */}
         <div className="w-full relative flex items-center gap-x-4">
           <i className="absolute pl-4">
             <BsSearch size="25px" fill="grey" />
@@ -186,39 +193,33 @@ const Services = () => {
           />
         </div>
         {/* list of all diseases */}
-        <div>
-          {/* alphabets */}
-          <p className="text-center pt-8 flex flex-wrap justify-center gap-y-4">
-            {alphabets.map((alphabet) => (
-              <a
-                key={alphabet.id}
-                href={`#${alphabet.letter}`}
-                className="uppercase text-xl text-primary underline px-2"
-              >
-                {alphabet.letter}
-              </a>
-            ))}
-          </p>
-          <ul>
-            {/* list of diseases */}
-            {alphabets.map((alphabet) => (
-              <li
-                key={alphabet.id}
-                className="uppercase text-primary text-2xl font-medium py-5 border-b-2 border-gray-600"
-                id={`${alphabet.letter}`}
-              >
-                {alphabet.letter}
-                <ul>
-                  <ArrayFilter
-                    arr={alphabet.diseases}
-                    userValue={enterDiseaseName}
-                  />
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {/* alphabets */}
+        <p className="text-center pt-8 flex flex-wrap justify-center gap-y-4">
+          {alphabets.map((alphabet) => (
+            <a
+              key={alphabet.id}
+              href={`#${alphabet.letter}`}
+              className="uppercase text-xl text-primary font-medium underline px-2"
+            >
+              {alphabet.letter}
+            </a>
+          ))}
+        </p>
+
+        {message && <h1>Sorry, no results were found.</h1>}
+        {/* list of diseases */}
+        {alphabets.map((alphabet) => (
+          <ArrayFilter
+            arr={alphabet.diseases}
+            userValue={enterDiseaseName}
+            alphabet={alphabet}
+            key={alphabet.id}
+            setMessage={setMessage}
+          />
+        ))}
       </section>
+
+      <Footer />
       <ScrollToTop />
     </>
   );
