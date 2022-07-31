@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ServiceCard from "./ServiceCard";
 import { BsSearch } from "react-icons/bs";
 import ScrollToTop from "../../components/ui/ScrollToTop";
@@ -10,121 +10,132 @@ import diseases_c from "../../data/Diseases_C";
 import diseases_d from "../../data/Diseases_D";
 import diseases_e from "../../data/Diseases_E";
 
+const alphabets = [
+  {
+    id: 1,
+    letter: "a",
+    diseases: diseases_a,
+  },
+  {
+    id: 2,
+    letter: "b",
+    diseases: diseases_b,
+  },
+  {
+    id: 3,
+    letter: "c",
+    diseases: diseases_c,
+  },
+  {
+    id: 4,
+    letter: "d",
+    diseases: diseases_d,
+  },
+  {
+    id: 5,
+    letter: "e",
+    diseases: diseases_e,
+  },
+  // {
+  //   id: 6,
+  //   letter: "f",
+  // },
+  // {
+  //   id: 7,
+  //   letter: "g",
+  // },
+  // {
+  //   id: 8,
+  //   letter: "h",
+  // },
+  // {
+  //   id: 9,
+  //   letter: "i",
+  // },
+  // {
+  //   id: 10,
+  //   letter: "j",
+  // },
+  // {
+  //   id: 11,
+  //   letter: "k",
+  // },
+  // {
+  //   id: 12,
+  //   letter: "l",
+  // },
+  // {
+  //   id: 13,
+  //   letter: "m",
+  // },
+  // {
+  //   id: 14,
+  //   letter: "n",
+  // },
+  // {
+  //   id: 15,
+  //   letter: "o",
+  // },
+  // {
+  //   id: 16,
+  //   letter: "p",
+  // },
+  // {
+  //   id: 17,
+  //   letter: "q",
+  // },
+  // {
+  //   id: 18,
+  //   letter: "r",
+  // },
+  // {
+  //   id: 19,
+  //   letter: "s",
+  // },
+  // {
+  //   id: 20,
+  //   letter: "t",
+  // },
+  // {
+  //   id: 21,
+  //   letter: "u",
+  // },
+  // {
+  //   id: 22,
+  //   letter: "v",
+  // },
+  // {
+  //   id: 23,
+  //   letter: "w",
+  // },
+  // {
+  //   id: 24,
+  //   letter: "x",
+  // },
+  // {
+  //   id: 25,
+  //   letter: "y",
+  // },
+  // {
+  //   id: 26,
+  //   letter: "z",
+  // },
+];
+
 const Services = () => {
   const [enterDiseaseName, setEnterDiseaseName] = useState("");
-  const [message, setMessage] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
 
-  const alphabets = [
-    {
-      id: 1,
-      letter: "a",
-      diseases: diseases_a,
-    },
-    {
-      id: 2,
-      letter: "b",
-      diseases: diseases_b,
-    },
-    {
-      id: 3,
-      letter: "c",
-      diseases: diseases_c,
-    },
-    {
-      id: 4,
-      letter: "d",
-      diseases: diseases_d,
-    },
-    {
-      id: 5,
-      letter: "e",
-      diseases: diseases_e,
-    },
-    // {
-    //   id: 6,
-    //   letter: "f",
-    // },
-    // {
-    //   id: 7,
-    //   letter: "g",
-    // },
-    // {
-    //   id: 8,
-    //   letter: "h",
-    // },
-    // {
-    //   id: 9,
-    //   letter: "i",
-    // },
-    // {
-    //   id: 10,
-    //   letter: "j",
-    // },
-    // {
-    //   id: 11,
-    //   letter: "k",
-    // },
-    // {
-    //   id: 12,
-    //   letter: "l",
-    // },
-    // {
-    //   id: 13,
-    //   letter: "m",
-    // },
-    // {
-    //   id: 14,
-    //   letter: "n",
-    // },
-    // {
-    //   id: 15,
-    //   letter: "o",
-    // },
-    // {
-    //   id: 16,
-    //   letter: "p",
-    // },
-    // {
-    //   id: 17,
-    //   letter: "q",
-    // },
-    // {
-    //   id: 18,
-    //   letter: "r",
-    // },
-    // {
-    //   id: 19,
-    //   letter: "s",
-    // },
-    // {
-    //   id: 20,
-    //   letter: "t",
-    // },
-    // {
-    //   id: 21,
-    //   letter: "u",
-    // },
-    // {
-    //   id: 22,
-    //   letter: "v",
-    // },
-    // {
-    //   id: 23,
-    //   letter: "w",
-    // },
-    // {
-    //   id: 24,
-    //   letter: "x",
-    // },
-    // {
-    //   id: 25,
-    //   letter: "y",
-    // },
-    // {
-    //   id: 26,
-    //   letter: "z",
-    // },
-  ];
+  let listOfDiseases = useRef(null);
+
+  useEffect(() => {
+    let length = listOfDiseases.current.children.length;
+    if (length === 0) {
+      setShowMessage(true);
+    } else {
+      setShowMessage(false);
+    }
+  });
   return (
     <>
       {/* bgimage */}
@@ -192,7 +203,9 @@ const Services = () => {
             className="w-full pl-16 py-4 text-gray-600 border-2 border-gray-600 text-xl font-poppins focus:outline-primary"
           />
         </div>
+
         {/* list of all diseases */}
+
         {/* alphabets */}
         <p className="text-center pt-8 flex flex-wrap justify-center gap-y-4">
           {alphabets.map((alphabet) => (
@@ -205,18 +218,23 @@ const Services = () => {
             </a>
           ))}
         </p>
+        {showMessage && (
+          <p className="py-2 md:py-6 text-center text-gray-600 text-2xl">
+            Sorry, no results were found.
+          </p>
+        )}
 
-        {message && <h1>Sorry, no results were found.</h1>}
         {/* list of diseases */}
-        {alphabets.map((alphabet) => (
-          <ArrayFilter
-            arr={alphabet.diseases}
-            userValue={enterDiseaseName}
-            alphabet={alphabet}
-            key={alphabet.id}
-            setMessage={setMessage}
-          />
-        ))}
+        <ul ref={listOfDiseases}>
+          {alphabets.map((alphabet) => (
+            <ArrayFilter
+              arr={alphabet.diseases}
+              userValue={enterDiseaseName}
+              letter={alphabet.letter}
+              key={alphabet.id}
+            />
+          ))}
+        </ul>
       </section>
 
       <Footer />
