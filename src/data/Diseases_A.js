@@ -1,31 +1,31 @@
 const diseases_a = [
   {
     id: 1,
-    name: "Abdominal Aortic Aneurysm",
+    name: "abdominal aortic aneurysm",
   },
   {
     id: 2,
-    name: "Allergy",
+    name: "allergy",
   },
   {
     id: 3,
-    name: "Alzheimer's Disease",
+    name: "alzheimer's disease",
   },
   {
     id: 4,
-    name: "Arthritis",
+    name: "arthritis",
   },
   {
     id: 5,
-    name: "Asthma",
+    name: "asthma",
   },
   {
     id: 6,
-    name: "Audiology",
+    name: "audiology",
   },
   {
     id: 7,
-    name: "Autism Spectrum Disorder (ASD)",
+    name: "autism spectrum disorder",
   },
 ];
 

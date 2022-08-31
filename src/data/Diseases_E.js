@@ -1,31 +1,31 @@
 const diseases_e = [
   {
     id: 1,
-    name: "Ear, Nose, & Throat (ENT)",
+    name: "ear, nose, & throat",
   },
   {
     id: 2,
-    name: "Emergency Room",
+    name: "emergency Room",
   },
   {
     id: 3,
-    name: "DermatologyElectroencephalogram (EEG) Testing for Epilepsy",
+    name: "dermatology electroencephalogram testing for epilepsy",
   },
   {
     id: 4,
-    name: "Emergency Medicine",
+    name: "emergency medicine",
   },
   {
     id: 5,
-    name: "Endocrinology",
+    name: "endocrinology",
   },
   {
     id: 6,
-    name: "Endometriosis",
+    name: "endometriosis",
   },
   {
     id: 7,
-    name: "Endoscopy",
+    name: "endoscopy",
   },
 ];
 

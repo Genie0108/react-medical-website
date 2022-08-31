@@ -1,31 +1,31 @@
 const diseases_c = [
   {
     id: 1,
-    name: "Cancer",
+    name: "cancer",
   },
   {
     id: 2,
-    name: "Cardiac (Heart) Imaging",
+    name: "cardiac (heart) imaging",
   },
   {
     id: 3,
-    name: "Cardiac Rehabilitation",
+    name: "cardiac rehabilitation",
   },
   {
     id: 4,
-    name: "Cardiology & Heart Disease",
+    name: "cardiology & heart disease",
   },
   {
     id: 5,
-    name: "Cardiothoracic Surgery",
+    name: "cardiothoracic surgery",
   },
   {
     id: 6,
-    name: "Cardiovascular (Heart Care)",
+    name: "cardiovascular (heart care)",
   },
   {
     id: 7,
-    name: "Cardioversion",
+    name: "cardioversion",
   },
 ];
 

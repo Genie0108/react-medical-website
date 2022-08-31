@@ -189,7 +189,10 @@ const Services = () => {
       {/* filter disease from list */}
       <section className="max-w-[1200px] mx-auto px-2 mt-10">
         {/* input box */}
-        <div className="w-full relative flex items-center gap-x-4">
+        <div
+          className="w-full relative flex items-center gap-x-4"
+          id="all_services"
+        >
           <i className="absolute pl-4">
             <BsSearch size="25px" fill="grey" />
           </i>
@@ -232,6 +235,7 @@ const Services = () => {
               userValue={enterDiseaseName}
               letter={alphabet.letter}
               key={alphabet.id}
+              id={`${alphabet.letter}`}
             />
           ))}
         </ul>

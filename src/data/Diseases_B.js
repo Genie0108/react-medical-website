@@ -1,23 +1,23 @@
 const diseases_b = [
   {
     id: 1,
-    name: "Back Pain & Neck Pain",
+    name: "back pain & neck pain",
   },
   {
     id: 2,
-    name: "Back Surgery",
+    name: "back surgery",
   },
   {
     id: 3,
-    name: "Balance & Mobility Clinic",
+    name: "balance & mobility clinic",
   },
   {
     id: 4,
-    name: "Bariatric Surgery",
+    name: "bariatric surgery",
   },
   {
     id: 5,
-    name: "Barrett's Esophagus",
+    name: "barrett's esophagus",
   },
 ];
 

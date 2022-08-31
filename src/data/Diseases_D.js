@@ -1,31 +1,31 @@
 const diseases_d = [
   {
     id: 1,
-    name: "Dentistry",
+    name: "dentistry",
   },
   {
     id: 2,
-    name: "Depression",
+    name: "depression",
   },
   {
     id: 3,
-    name: "Dermatology",
+    name: "dermatology",
   },
   {
     id: 4,
-    name: "Diabetes",
+    name: "diabetes",
   },
   {
     id: 5,
-    name: "Dialysis",
+    name: "dialysis",
   },
   {
     id: 6,
-    name: "Diaphragm Plication",
+    name: "diaphragm plication",
   },
   {
     id: 7,
-    name: "Dystonia",
+    name: "dystonia",
   },
 ];
 
