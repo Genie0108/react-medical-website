@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./ui/Button";
 
 const Form = () => {
   const onSubmit = (e) => {
@@ -106,7 +105,12 @@ const Form = () => {
               placeholder="message&#42;"
               className="mt-5 w-full text-black placeholder:text-gray-600 px-2 py-3 text-base font-semibold focus:outline-2 focus:outline-primaryDark outline-none focus:ring-2 focus:ring-primaryDark"
             ></textarea>
-            <Button submit="Submit" className="w-full" />
+            <button
+              type="submit"
+              className="mt-4 py-3 bg-[rgba(20,193,185,0.56)] text-white text-xl font-normal w-full"
+            >
+              Submit
+            </button>
           </div>
         </div>
       </div>

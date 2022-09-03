@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import { IoIosContact } from "react-icons/io";
+import Button from "../components/ui/Button";
 
 const Navbar = () => {
   let activeStyle = {
@@ -70,9 +71,7 @@ const Navbar = () => {
           <IoIosContact size="30px" fill="grey" className="cursor-pointer" />
         </i>
         <a href="#contact">
-          <button className="uppercase flex items-center px-5 py-2 rounded-3xl text-white font-semibold cursor-pointer bg-primary">
-            Contact
-          </button>
+          <Button text="Contact" />
         </a>
       </div>
     </nav>
