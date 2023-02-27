@@ -135,7 +135,7 @@ const Services = () => {
     } else {
       setShowMessage(false);
     }
-  });
+  }, []);
   return (
     <>
       {/* bgimage */}
