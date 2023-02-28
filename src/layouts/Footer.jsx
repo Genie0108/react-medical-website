@@ -7,11 +7,73 @@ import {
 } from "react-icons/ai";
 import { BsTelephone, BsTwitter } from "react-icons/bs";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import FooterList from "../components/FooterList";
 
 const Footer = () => {
+  const aboutUsLists = [
+    {
+      id: 1,
+      text: "Our Mission  & Values",
+    },
+    {
+      id: 2,
+      text: "Leadership",
+    },
+    {
+      id: 3,
+      text: "Transformation",
+    },
+    {
+      id: 4,
+      text: "Awards",
+    },
+    {
+      id: 5,
+      text: "Diversity is Our Speciality",
+    },
+    {
+      id: 6,
+      text: "Publications & Reports",
+    },
+    {
+      id: 7,
+      text: "Policies & Procedures",
+    },
+  ];
+
+  const ourServicesLists = [
+    {
+      id: 1,
+      text: "Lung Disease",
+    },
+    {
+      id: 2,
+      text: "Orthopaedic",
+    },
+    {
+      id: 3,
+      text: "Pharmacy",
+    },
+    {
+      id: 4,
+      text: "Our Mission & Values",
+    },
+    {
+      id: 5,
+      text: "Sport Injury",
+    },
+    {
+      id: 6,
+      text: "Heart",
+    },
+    {
+      id: 7,
+      text: "Dental Service",
+    },
+  ];
+
   return (
-    <section className="w-full bg-primary mt-6 py-14">
+    <footer className="w-full bg-primary mt-6 py-14">
       {/* all details */}
       <div className="max-w-[1200px] mx-auto px-2 flex justify-start gap-x-20 gap-y-10 items-start flex-wrap md:justify-evenly md:gap-x-10 lg:gap-0 lg:justify-start lg:flex-nowrap">
         {/* first col */}
@@ -40,48 +102,9 @@ const Footer = () => {
             About Us
           </h1>
           <ul className="pt-4">
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" /> Our Mission
-                & Values
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" />
-                Leadership
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" />
-                Transformation
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" />
-                Awards
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" />
-                Diversity is Our Speciality
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" />
-                Publications & Reports
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" />
-                Policies & Procedures
-              </li>
-            </Link>
+            {aboutUsLists.map((list) => (
+              <FooterList key={list.id} text={list.text} />
+            ))}
           </ul>
         </div>
 
@@ -91,43 +114,9 @@ const Footer = () => {
             Our Services
           </h1>
           <ul className="pt-4">
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" /> Lung Disease
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" /> Orthopaedic
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" /> Pharmacy
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" /> Our Mission
-                & Values
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" /> Sport Injury
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" /> Heart
-              </li>
-            </Link>
-            <Link to="">
-              <li className="pt-1 flex items-center gap-x-1 text-white hover:translate-x-4">
-                <IoIosArrowRoundForward size="30px" fill="white" /> Dental
-                Service
-              </li>
-            </Link>
+            {ourServicesLists.map((list) => (
+              <FooterList key={list.id} text={list.text} />
+            ))}
           </ul>
         </div>
 
@@ -207,7 +196,7 @@ const Footer = () => {
           Copyright 2022 Medcare, All rights Reserved
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
