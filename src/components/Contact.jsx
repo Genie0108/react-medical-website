@@ -28,6 +28,7 @@ const Contact = () => {
               name="name"
               id="name"
               placeholder="Full Name&#42;"
+              aria-label="Your Full name"
               className="px-2 py-3 mb-4 w-full rounded text-gray-700 text-base outline-none focus:ring-2
               focus:ring-primaryDark
               focus:outline-primaryDark"
@@ -38,6 +39,7 @@ const Contact = () => {
               name="email"
               id="email"
               placeholder="Email Address&#42;"
+              aria-label="Your Email Address"
               className="px-2 py-3 mb-4 w-full rounded text-gray-700 text-base outline-none focus:ring-2
               focus:ring-primaryDark
               focus:outline-primaryDark"
@@ -48,6 +50,7 @@ const Contact = () => {
               name="subject"
               id="subject"
               placeholder="Subject&#42;"
+              aria-label="Subject of query"
               className="px-2 py-3 mb-4 w-full rounded text-gray-700 text-base outline-none focus:ring-2
               focus:ring-primaryDark
               focus:outline-primaryDark"
@@ -60,12 +63,13 @@ const Contact = () => {
               cols="30"
               rows="10"
               placeholder="message&#42;"
+              aria-label="text message"
               className="px-2 py-3 w-full rounded text-gray-700 text-base outline-none focus:ring-2
               focus:ring-primaryDark
               focus:outline-primaryDark"
               required
             />
-            <Button submit="Submit" className="w-full" />
+            <Button text="Submit" className="w-full" />
           </form>
         </div>
 

@@ -26,30 +26,34 @@ const Form = () => {
             <div className="flex gap-x-4">
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="appointment_name"
+                id="appointment_name"
                 placeholder="Full Name&#42;"
+                aria-label="Your Full Name"
                 className="w-1/2 text-black placeholder:text-gray-600 px-2 py-3 rounded text-base font-semibold focus:outline-2 focus:outline-primaryDark outline-none focus:ring-2 focus:ring-primaryDark"
               />
               <input
                 type="text"
-                name="number"
-                id="number"
+                name="appointment_number"
+                id="appointment_number"
                 placeholder="Phone&#42;"
+                aria-label="Your Phone Number"
                 className="w-1/2 text-black placeholder:text-gray-600 px-2 py-3 rounded text-base font-semibold focus:outline-2 focus:outline-primaryDark outline-none focus:ring-2 focus:ring-primaryDark"
               />
             </div>
             <div className="mt-5 flex gap-x-4">
               <input
                 type="email"
-                name="email"
-                id="email"
+                name="appointment_email"
+                id="appointment_email"
                 placeholder="Email&#42;"
+                aria-label="Your email address"
                 className="w-1/2 text-black placeholder:text-gray-600 px-2 py-3 rounded text-base font-semibold focus:outline-2 focus:outline-primaryDark outline-none focus:ring-2 focus:ring-primaryDark"
               />
               <select
-                name="disease"
-                id="disease"
+                name="disease_name"
+                id="disease_name"
+                aria-label="disease_name"
                 className="w-1/2 text-black px-2 py-3 rounded text-base font-semibold focus:outline-2 focus:outline-primaryDark outline-none focus:ring-2 focus:ring-primaryDark"
               >
                 <option value="lung" className="text-gray-900">
@@ -84,22 +88,25 @@ const Form = () => {
             <div className="mt-5 flex gap-x-4">
               <input
                 type="string"
-                name="date"
-                id="date"
+                name="appointment_date"
+                id="appointment_date"
                 placeholder="Date"
+                aria-label="An Appointment Date"
                 className="w-1/2 text-black placeholder:text-gray-600 px-2 py-3 rounded text-base font-semibold focus:outline-2 focus:outline-primaryDark outline-none focus:ring-2 focus:ring-primaryDark"
               />
               <input
                 type="string"
-                name="time"
-                id="time"
+                name="appointment_time"
+                id="appointment_time"
                 placeholder="Time"
+                aria-label="An Appointment Time"
                 className="w-1/2 text-black placeholder:text-gray-600 px-2 py-3 rounded text-base font-semibold focus:outline-2 focus:outline-primaryDark outline-none focus:ring-2 focus:ring-primaryDark"
               />
             </div>
             <textarea
-              name="message"
-              id="message"
+              name="appointment_message"
+              id="appointment_message"
+              aria-label="Text Message during appointment booking"
               cols="30"
               rows="10"
               placeholder="message&#42;"

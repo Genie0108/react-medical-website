@@ -14,7 +14,11 @@ const Dropdown = () => {
   return (
     <>
       <div className="md:hidden">
-        <button className="cursor-pointer" onClick={handleToggle}>
+        <button
+          className="cursor-pointer"
+          onClick={handleToggle}
+          aria-label="menu"
+        >
           <i className="pr-3 sm:pr-2 flex items-center">
             {!toggle && <RiMenu5Fill size="30px" />}
             {toggle && <RiCloseLine size="30px" />}

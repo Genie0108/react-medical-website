@@ -46,8 +46,9 @@ const NewsLetterSubscribtion = () => {
             <div className="flex items-start">
               <input
                 type="email"
-                name="email"
-                id="email"
+                name="subscription_email"
+                id="subscription_email"
+                aria-label="Your email address to subscribe our newsletter"
                 placeholder="Your Email Address"
                 className="w-[50%] sm:w-full basis-3/4 rounded rounded-r-none pl-5 py-3"
               />

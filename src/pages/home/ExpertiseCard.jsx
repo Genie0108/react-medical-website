@@ -25,7 +25,7 @@ const ExpertiseCard = () => {
             </h2>
             <p className="mt-3">{expertise.text}</p>
             <div className="mt-3 flex items-center gap-x-2">
-              <Link to="" className="text-base font-medium text-gray-500">
+              <Link to="" className="text-base font-medium text-gray-700">
                 Learn More
               </Link>
               <i>

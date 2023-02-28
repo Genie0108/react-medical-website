@@ -18,19 +18,23 @@ import ScrollToTop from "../../components/ui/ScrollToTop";
 const Home = () => {
   return (
     <>
-      <IntroSection />
-      <EmergencyService />
-      <ServiceCard />
-      <HospitalInfo />
-      <OurExpertises />
-      <TabGallery />
-      <OurDoctor />
-      <Certificates />
-      <NewsLetterSubscribtion />
-      <RecentNews />
-      <WeOffer />
-      <Testimonial />
-      <Contact />
+      <main>
+        <IntroSection />
+        <EmergencyService />
+        <ServiceCard />
+        <HospitalInfo />
+        <OurExpertises />
+        <TabGallery />
+        <OurDoctor />
+        <Certificates />
+        <NewsLetterSubscribtion />
+      </main>
+      <aside>
+        <RecentNews />
+        <WeOffer />
+        <Testimonial />
+        <Contact />
+      </aside>
       <Footer />
       <ScrollToTop />
     </>

@@ -26,7 +26,7 @@ const RecentNews = () => {
             <h2 className="text-white text-base font-semibold pb-1 cursor-pointer">
               Using anthrax to fight cancer effectively
             </h2>
-            <p className="text-gray-200 text-sm cursor-pointer">
+            <p className="text-white text-sm cursor-pointer">
               Feburary 28, 2019 . Antibiotic
             </p>
           </div>

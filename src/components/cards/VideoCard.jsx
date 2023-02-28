@@ -21,7 +21,7 @@ const VideoCard = ({
       className="bg-videoCard bg-cover bg-no-repeat bg-center sm:h-[920px]"
     >
       <div className="bg-white w-24 h-24 rounded-full relative left-1/2 -translate-x-1/2 top-10 sm:top-32 flex items-center justify-center cursor-pointer">
-        <button onClick={() => setPlayVideo(true)}>
+        <button onClick={() => setPlayVideo(true)} aria-label="play or pause">
           <BsPlayFill size="50px" className="" fill="#46444C" />
         </button>
       </div>
