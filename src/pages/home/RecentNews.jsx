@@ -17,7 +17,7 @@ const RecentNews = () => {
         <div className="lg:pt-9 max-w-[400px]w-1/2 mx-auto ">
           <div className="overflow-hidden">
             <img
-              src="https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/shutterstock_556980217-900x500.jpg"
+              src="/images/hospital_equipment.avif"
               alt="hospital equipment"
               className="cursor-pointer transition duration-500 ease-in hover:scale-110 hover:brightness-75"
             />

@@ -142,7 +142,7 @@ const Services = () => {
       <section>
         <div
           style={{
-            backgroundImage: `linear-gradient(to bottom,rgba(10, 124, 139,0.3) 70%,rgba(10, 124, 139,0.5) 100%), url(/images/services/doctor.jpg)`,
+            backgroundImage: `linear-gradient(to bottom,rgba(10, 124, 139,0.3) 70%,rgba(10, 124, 139,0.5) 100%), url(/images/services/doctor.avif)`,
           }}
           className="mt-10 w-full bg-cover bg-no-repeat bg-center min-h-max saturate-150 h-[600px]"
         >

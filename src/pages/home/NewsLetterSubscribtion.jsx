@@ -8,7 +8,7 @@ const NewsLetterSubscribtion = () => {
       <div className="bg-white flex flex-col sm:flex-row items-center">
         <div className="w-1/2">
           <img
-            src="https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/Girl-talk.jpg"
+            src="/images/doctor_talking_with_patient.avif"
             alt="doctor talking with patients"
             className="w-full"
           />

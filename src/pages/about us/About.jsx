@@ -14,7 +14,7 @@ const AboutUs = () => {
     <>
       <div
         style={{
-          backgroundImage: `linear-gradient(to top,rgba(10, 124, 139,0.4) 70%,rgba(10, 124, 139,0.5) 100%), url(/images/hospital_building.jpg)`,
+          backgroundImage: `linear-gradient(to top,rgba(10, 124, 139,0.4) 70%,rgba(10, 124, 139,0.5) 100%), url(/images/hospital_building.avif)`,
         }}
         className="mt-10 w-full bg-cover bg-no-repeat bg-center h-96 min-h-max saturate-150 xl:h-[500px]"
       ></div>

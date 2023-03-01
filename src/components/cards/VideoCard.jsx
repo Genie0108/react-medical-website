@@ -13,10 +13,13 @@ const VideoCard = ({
   title,
 }) => {
   const [playVideo, setPlayVideo] = useState(false);
+
   return (
     <section
       style={{
-        backgroundImage: `linear-gradient(to top,rgba(10, 124, 139,1) 30%,rgba(10, 124, 139,0.3)), url(${videoImg})`,
+        backgroundImage: `linear-gradient(to top,rgba(10, 124, 139,1) 30%,rgba(10, 124, 139,0.3)), url(${
+          process.env.PUBLIC_URL + videoImg
+        })`,
       }}
       className="bg-videoCard bg-cover bg-no-repeat bg-center sm:h-[920px]"
     >

@@ -15,11 +15,9 @@ const TabGallery = () => {
       description:
         "Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects),efficacy/potency, metabolic stability (to increase the half-life),and oral bioavailability. Once a compound that fulfills all of these requirements.",
 
-      coverImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-1-2.jpg",
+      coverImg: "/images/tab_gallery/cover_img_1.avif",
       videoLink: "https://www.youtube.com/embed/bUGx4HoQs8o",
-      videoImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-1-1.jpg",
+      videoImg: "/images/tab_gallery/video_img_1.avif",
     },
     {
       id: 2,
@@ -31,11 +29,9 @@ const TabGallery = () => {
       description:
         "Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects),efficacy/potency, metabolic stability (to increase the half-life),and oral bioavailability. Once a compound that fulfills all of these requirements.",
 
-      coverImg:
-        "https://media.istockphoto.com/photos/empty-modern-hospital-corridor-picture-id1294129593?k=20&m=1294129593&s=612x612&w=0&h=NvqV92MC0Uv8LHHfU-4xGWV7Dq--e6xdAtQkc5hXwug=",
+      coverImg: "/images/tab_gallery/cover_img_2.avif",
       videoLink: "https://www.youtube.com/embed/SJ8jYHPLACQ",
-      videoImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-2-1.jpg",
+      videoImg: "/images/tab_gallery/video_img_2.avif",
     },
     {
       id: 3,
@@ -47,11 +43,9 @@ const TabGallery = () => {
       description:
         "Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects),efficacy/potency, metabolic stability (to increase the half-life),and oral bioavailability. Once a compound that fulfills all of these requirements.",
 
-      coverImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-2-2.jpg",
+      coverImg: "/images/tab_gallery/cover_img_3.avif",
       videoLink: "https://www.youtube.com/embed/1rwUMglyBU8",
-      videoImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-3-1.jpg",
+      videoImg: "images/tab_gallery/video_img_3.avif",
     },
 
     {
@@ -64,11 +58,9 @@ const TabGallery = () => {
       description:
         "Modern drug discovery involves the identification of screening hits, medicinal chemistry and optimization of those hits to increase the affinity, selectivity (to reduce the potential of side effects),efficacy/potency, metabolic stability (to increase the half-life),and oral bioavailability. Once a compound that fulfills all of these requirements.",
 
-      coverImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-4-2.jpg",
+      coverImg: "/images/tab_gallery/cover_img_4.avif",
       videoLink: "https://www.youtube.com/embed/TgYY6cRazHM",
-      videoImg:
-        "https://a6e8z9v6.stackpathcdn.com/mediz/hospital/wp-content/uploads/sites/2/2019/12/video-featured-4-1.jpg",
+      videoImg: "/images/tab_gallery/video_img_4.avif",
     },
   ];
   return (
